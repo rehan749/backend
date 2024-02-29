@@ -1,10 +1,14 @@
 // Using Node.js `require()`
 const mongoose = require('mongoose');
+require('dotenv').config(); 
 
 // Using ES6 imports
 // import mongoose from 'mongoose';
 
-const MongoURL = 'mongodb://127.0.0.1:27017/hotel'
+const MongoURL = process.env.MongoURL;
+
+// console.log(process.env);
+
 
 // setup mongodb connection 
 // mongoose.connect(MongoURL,{

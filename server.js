@@ -1,6 +1,7 @@
 // import express from 'express';
 const express = require('express');
 const mongoose = require('./db');
+require('dotenv').config()
 
 
 const menuItem = require('./models/MenuItem')
